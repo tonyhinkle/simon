@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 table {
 	width: 60%;
 	height: 80%;
@@ -26,32 +25,3 @@ td {
 #c4 {
 	background-color: yellow;
 }
-=======
-table {
-	width: 60%;
-	height: 80%;
-}
-
-td {
-	opacity: .25;
-	border-radius: 25px;
-	border: 10px solid white;
-
-}
-
-#c1 {
-	background-color: red;
-}
-
-#c2 {
-	background-color: blue;
-}
-
-#c3 {
-	background-color: green;
-}
-
-#c4 {
-	background-color: yellow;
-}
->>>>>>> f14f01dc22684a23b7a4d1040847f4368bdbc53e
