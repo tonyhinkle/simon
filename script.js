@@ -12,7 +12,6 @@ $(document).ready(function ($) {
 
         lightItUp([this, false]);
         playerArray.push($(this).data("square"));
-        console.log(playerArray);
         comparePlayerArray();
         
 	});
@@ -21,11 +20,8 @@ $(document).ready(function ($) {
      
         for(var i = 0; i < playerArray.length; i++){
             if(playerArray[i] != sequenceArray[i]){
-                //player loses...
-                //console.log(sequenceArray);
-                //console.log(playerArray);
                 simonsTurn = true;
-                $("#btnStart").text("Start");
+                $("#btnStart").text("Start").prop("disabled", false);
                 alert("You lose after " + (sequenceArray.length - 1));
                 sequenceArray = [];
                 break;
