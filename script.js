@@ -6,6 +6,7 @@ $(document).ready(function ($) {
     
     $("td").on("click", function(){
         
+				//Don't do anything if the player clicks a panel while it is Simon's turn
         if(simonsTurn === true){
             return;
         }
