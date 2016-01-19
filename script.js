@@ -10,10 +10,10 @@ $(document).ready(function ($) {
             return;
         }
 
-        lightItUp([this, false]);
         playerArray.push($(this).data("square"));
-        comparePlayerArray();
-        
+        if(comparePlayerArray()){
+            lightItUp([this, false]);
+        }
 	});
     
     function comparePlayerArray(){
@@ -24,7 +24,8 @@ $(document).ready(function ($) {
                 $("#btnStart").text("Start").prop("disabled", false);
                 alert("You lose after " + (sequenceArray.length - 1));
                 sequenceArray = [];
-                break;
+                playerArray = [];
+                return false;
             }
         }
         
@@ -33,6 +34,8 @@ $(document).ready(function ($) {
             $("#btnStart").prop("disabled", false);
             playerArray = [];
         }
+        
+        return true;
     }
 	
 	$("#btnStart").on("click", function(){
