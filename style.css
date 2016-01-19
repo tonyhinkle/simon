@@ -1,14 +1,12 @@
 table {
-	width: 60%;
-	height: 80%;
+	width: 40%;
+  height: 75%; border-radius: 20%;
 }
 
 td {
 	opacity: .25;
-	border-radius: 25px;
-	border: 10px solid white;
-
-}
+	border-radius: 20%;
+	border: 10px solid white}
 
 #c1 {
 	background-color: red;
