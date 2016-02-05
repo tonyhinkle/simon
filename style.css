@@ -1,25 +1,54 @@
-table {
-	width: 40%;
-  height: 75%; border-radius: 20%;
+#base {
+  border: 15px solid #444444;
+  background-color: #444444;
+  border-radius: 100%;
+  width: 510px;
+  height: 508px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -255px;
+  margin-top: -255px;
 }
 
-td {
-	opacity: .25;
-	border-radius: 20%;
-	border: 10px solid white}
+.lightPanel {
+  width: 250px; 
+  height: 250px; 
+  float: left;
+  opacity: .75;
+}
 
 #c1 {
-	background-color: red;
+  background-color: red;
+  border-top-left-radius: 98%;
+  border-right: 10px solid #444444;
+  border-bottom: 10px solid #444444;
+  background-clip: padding-box;
 }
 
 #c2 {
-	background-color: blue;
+  background-color: green;
+  border-top-right-radius: 98%;
+  border-bottom: 10px solid #444444;
 }
 
 #c3 {
-	background-color: green;
+  background-color: blue;
+  border-bottom-left-radius: 98%;
 }
 
 #c4 {
-	background-color: yellow;
+  background-color: yellow;
+  border-bottom-right-radius: 98%;
+  border-left: 10px solid #444444;
+}
+
+#controlPanel {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 100%;
+  background-color: #444444;
+  top: 105;
+  left: 105;
 }
