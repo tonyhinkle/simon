@@ -1,8 +1,8 @@
 $(document).ready(function ($) {
 
-    sequenceArray = [];
-    playerArray = [];
-    simonsTurn = true;
+    var sequenceArray = [];
+    var playerArray = [];
+    var simonsTurn = true;
     
     $("td").on("click", function(){
         
@@ -79,6 +79,6 @@ $(document).ready(function ($) {
             //$("#btnStart").prop("disabled", false);
         }
     }
-        
+    
 });
 
