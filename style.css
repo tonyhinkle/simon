@@ -52,7 +52,43 @@
   height: 300px;
   position: relative;
   border-radius: 100%;
-  background-color: #444444;
+  background-color: #eee;
   top: 105;
   left: 105;
+}
+
+#divPowerSwitchOuter {
+    display: inline;
+    position: absolute;
+    top: 250;
+    left: 90;
+    vertical-align: top;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+#divPowerSwitch {
+    background-color: black;
+    border-radius: 3px;
+    padding: 3px;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+#divOnSwitch, #divOffSwitch {
+    width: 21px;
+    height: 25px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#divOffSwitch {
+    background-color: blue;
+}
+
+table {
+    height: 100%;
+    display: inline;
+    vertical-align: middle;
 }

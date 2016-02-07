@@ -88,3 +88,4 @@ function fnSimonsTurn(){
     }
 });
 
+var gameOn = false;
